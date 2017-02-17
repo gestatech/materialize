@@ -11,3 +11,18 @@ $(document).ready(function(){
    $(".button-collapse").sideNav();
    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
    //$('.collapsible').collapsible();        
+   
+   var $toastContent;
+   
+   
+   function updateButtons(){
+	   if (document.getElementById('play-button-text').innerHTML == "play_circle_outline"){
+		   document.getElementById('play-button-text').innerHTML = "pause_circle_outline";
+		   $toastContent = $('<span>Play</span>');
+	   }
+	   else{
+		   document.getElementById('play-button-text').innerHTML = "play_circle_outline";
+		   $toastContent = $('<span>Pause</span>');
+	   }
+	   Materialize.toast($toastContent, 5000);		  
+   }
