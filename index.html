@@ -13,12 +13,59 @@
 </head>
 
 <body>
+<header> 
 
-
-          
-          
-
+<!--Header Content Starts-->
+	  <nav><!--Navbar starts-->
+	    <div class="nav-wrapper yellow"> <!--Wrapper content with yellow background-->
+	      <a href="#" class="brand-logo center black-text">Music</a> <!--Title with black text, centered-->
+	      <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="material-icons">menu</i></a><!--Side nav open button-->
+	    </div><!--Wrapper content ends-->
+	  </nav><!--Navbar ends-->
+	  
+	
+	  <ul id="slide-out" class="side-nav" style="transform: translateX(-100%);"><!--Side nav starts-->
+	    <li><div class="userView">
+	      <div class="background">
+	        <img src="images/side-nav-background.jpg">
+	      </div>
+	      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+	      <a href="#!name"><span class="white-text name">John Doe</span></a>
+	      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+	    </div></li>
+	    <li><a href="#!">First Link</a></li><!--Links start-->
+	    <li><div class="divider"></div></li>
+	    <li><a href="#!">Second Link</a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a href="#!">Third Link</a></li>
+	  </ul><!--Side nav ends-->
+  </header> <!--Header Content Ends-->
   
+  <main> <!--Main content starts-->
+  	<div class="row full-width album-area">
+  		<div class="col s12">
+  			<div class="center"><img class="responsive-img center" src="http://placehold.it/350x350"></div>
+  		</div> 	
+  	</div>	
+  		
+	<div class="row full-width control-area">
+		<div class="col s4 center"><i class="medium material-icons"><a id="back-button-text" onclick="Materialize.toast('Back', 3000)">skip_previous</a></i></div>
+		<div class="col s4 center"><i class="medium material-icons"><a id="play-button-text" onclick="Materialize.toast('Play', 3000)">play_circle_outline</a></i></div> 		
+		<div class="col s4 center"><i class="medium material-icons"><a id="Forward-button-text" onclick="Materialize.toast('Skip', 3000)">skip_next</a></i></div> 		 		
+	</div>
+  </main><!--Main content ends-->
+  
+  <footer><!--Footer content starts-->
+	  <div class="section yellow z-depth-1">
+	       <div class="black-text">
+	           <div class="row center footer-text">
+	              <div class="col m6 s12">©	 2017 1147 Technology</div>
+	              <div class="col m6 s12">Created By <span class="red-text text-darken-3">Exer<span class="grey-text">dra</span></span></div>
+	           </div>
+	       </div>  
+	  </div>
+  </footer><!--Footer content ends-->
+ 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
