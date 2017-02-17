@@ -24,5 +24,5 @@ $(document).ready(function(){
 		   document.getElementById('play-button-text').innerHTML = "play_circle_outline";
 		   $toastContent = $('<span>Pause</span>');
 	   }
-	   Materialize.toast($toastContent, 5000);		  
+	   Materialize.toast($toastContent, 1000);		  
    }
